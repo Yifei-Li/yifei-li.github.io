@@ -128,7 +128,7 @@ h2  {
 }
 
 h2 span {
-    background: #fff;
+    background: #F8F8F8;
     padding: 0 10px;
 }
 
@@ -140,7 +140,7 @@ p1  {
 }
 
 .verticalPad    {
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 
 .project    {
@@ -153,6 +153,7 @@ p1  {
     height: auto;
     background-color: white;
     box-shadow: 1px 2px 20px -8px #383838;
+    margin-bottom: 10%;
 }
 
 .overlay    {
@@ -213,9 +214,4 @@ h3  {
 
 .project-text   {
     
-}
-
-.project-spacer {
-    position: relative;
-    height: 100%;
 }
