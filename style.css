@@ -1,4 +1,3 @@
-
 /*this is the guy for laptops and shit*/
 .banner    {
     height: 100%;
@@ -8,7 +7,6 @@
 .bar {
     background-color: #282828;
     color: white !important;
-    
 }
 
 .bigcontainer  {
@@ -46,7 +44,7 @@ body    {
 .projects-section {
     min-height: 100%;
     padding-top: 100px;
-    background: #fff;
+    background: #F8F8F8;
 }
 
 .experience-section {
@@ -146,19 +144,15 @@ p1  {
 }
 
 .project    {
+    content: "\A";
+    position: relative;
     overflow: hidden;
     box-sizing: border-box;
     float: left;
     display: inline-block;
     height: auto;
-}
-
-.project-description    {
-    box-sizing: border-box;
-    display: inline-block;
-    overflow: auto;
-    width: 100%;
-    height: 200%;
+    background-color: white;
+    box-shadow: 1px 2px 20px -8px #383838;
 }
 
 .overlay    {
@@ -205,4 +199,23 @@ p1  {
 
 .overlay:hover:after, .overlay:hover:before {
     opacity: 1;
+}
+
+.project-description    {
+    position: relative !important;
+    text-align: center;
+}
+
+h3  {
+    font-family: 'Montserrat';
+    font-size: 150% !important;
+}
+
+.project-text   {
+    
+}
+
+.project-spacer {
+    position: relative;
+    height: 100%;
 }
