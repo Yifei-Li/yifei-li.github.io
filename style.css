@@ -16,6 +16,13 @@
 
 body    {
     background-color: #eee !important;
+    overflow: auto !important;
+    height: 100% !important;
+}
+
+html    {
+    overflow: hidden !important;
+    height: 100% !important;
 }
 
 .navbar-brand   {
@@ -26,7 +33,7 @@ body    {
     -o-transform:scale(1.2,1); /* Opera */
     transform:scale(1.2,1); /* W3C */
     color: white !important;
-    text-shadow: #181818 2px 6px 5px, rgba(255,255,255,.4) 0 -4px 30px;
+    text-shadow: #181818 2px 6px 5px;
     font-family: 'Open Sans' !important;
     font-weight: 600 !important;
 }
@@ -128,8 +135,12 @@ h2  {
 }
 
 h2 span {
-    background: #F8F8F8;
+    background: white;
     padding: 0 10px;
+}
+
+.projects-section h2 span {
+    background: #F8F8F8;
 }
 
 p1  {
@@ -214,4 +225,8 @@ h3  {
 
 .project-text   {
     
+}
+
+.modal-open {
+    overflow: hidden !important;
 }
