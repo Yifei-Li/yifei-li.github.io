@@ -16,13 +16,12 @@
 
 body    {
     background-color: #eee !important;
-    overflow: auto !important;
-    height: 100% !important;
 }
 
-html    {
-    overflow: hidden !important;
-    height: 100% !important;
+/* well apparently this fixes scrollbar padding shift when modals open*/
+body.modal-open {
+    overflow: inherit;
+    padding-right: 0 !important;
 }
 
 .navbar-brand   {
@@ -225,8 +224,4 @@ h3  {
 
 .project-text   {
     
-}
-
-.modal-open {
-    overflow: hidden !important;
 }
