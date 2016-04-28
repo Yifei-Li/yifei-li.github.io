@@ -155,10 +155,14 @@ p1  {
     padding-bottom: 7%;
 }
 
+.col-md-4   {
+    float: right;
+}
+
 .project    {
     content: "\A";
-    position: relative;
     overflow: hidden;
+    position: relative;
     box-sizing: border-box;
     float: left;
     display: inline-block;
