@@ -32,14 +32,13 @@ Main components
   content: '';
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 28px;
   height: 100%;
   width: 4px;
   background: darkorange;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
     margin-bottom: 3em;
   }
   #cd-timeline::before {
@@ -88,7 +87,7 @@ Main components
   display: block;
   width: 40px;
   height: 40px;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -20px;
@@ -110,14 +109,19 @@ Main components
     left: 50%;
     margin-left: -40px;
   }
+  
+  .cd-timeline-content {
+      right: 1em;
+  }    
 }
 
 .cd-timeline-content {
+  top: .55em;
   position: relative;
   margin-left: 80px;
-  background: #F8F8F8;
+  background: #F1F1F1;
   border-radius: 0.25em;
-  padding: 2em;
+  padding: .1em 1em 1em 1em;
   box-shadow: 1px 2px 20px -8px #383838;
 }
 .cd-timeline-content:after {
@@ -125,9 +129,7 @@ Main components
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
-  color: #303e49;
-}
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -149,11 +151,7 @@ Main components
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
-.cd-timeline-content .cd-date {
-  float: left;
-  padding: .8em 0;
-  opacity: .7;
-}
+
 .cd-timeline-content::before {
   content: '';
   position: absolute;
@@ -162,7 +160,7 @@ Main components
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #F8F8F8;
+  border-right: 7px solid #F1F1F1;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -181,14 +179,15 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: .1em 1em 1em 1em;
     width: 45%;
   }
   .cd-timeline-content::before {
     top: 24px;
     left: 100%;
+      
     border-color: transparent;
-    border-left-color: #F8F8F8;
+    border-left-color: #F1F1F1;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -203,13 +202,14 @@ Main components
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
+    left: 1em;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #F8F8F8;
+    border-right-color: #F1F1F1;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
@@ -219,4 +219,9 @@ Main components
     right: 122%;
     text-align: right;
   }
+}
+
+.cd-timeline-content h2{
+    font-family: 'Montserrat';
+    font-size: 1.5em;
 }

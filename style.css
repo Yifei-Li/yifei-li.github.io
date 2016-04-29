@@ -125,7 +125,7 @@ h1  {
     text-shadow: 2px 2px 10px black;
 }
 
-h2  {
+.col-lg-12 h2  {
     font-family: 'Montserrat' !important;
     font-size: 200% !important;
     font-weight: 600 !important;
