@@ -1,19 +1,4 @@
 /*this is the guy for laptops and shit*/
-.banner    {
-    height: 100%;
-    background-image: url(images/fucking%20mountains.jpg);
-}
-
-.bar {
-    background-color: #282828;
-    color: white !important;
-}
-
-.bigcontainer  {
-    margin: auto;
-    background-color: transparent;
-}
-
 body    {
     background-color: #eee !important;
 }
@@ -37,8 +22,12 @@ body.modal-open {
     font-weight: 600 !important;
 }
 
+section {
+    min-height: 100%;
+    position: relative;
+}
+
 .about-section {
-    height: 100%;
     padding-top: 150px;
     background: #fff;
     background-image: url(images/Innsbruck.png);
@@ -47,9 +36,8 @@ body.modal-open {
     background-position: center top;
 }
 
-.projects-section {
-    min-height: 100%;
-    padding-top: 6%;
+.projects-section, .contact-section {
+    padding-top: 100px;
     background: #F8F8F8;
 }
 
@@ -57,14 +45,6 @@ body.modal-open {
     min-height: 100%;
     padding-top: 100px;
     background: #fff;
-    position: relative;
-}
-
-.contact-section {
-    height: 100%;
-    padding-top: 100px;
-    background: #F8F8F8;
-    position: relative;
 }
 
 body {
@@ -105,11 +85,7 @@ html {
 
 @media(min-width: 767px)    {
     .container-fluid    {
-        width: 600px;
-    }
-    
-    .section-container  {
-        width: 700px;
+        max-width: 650px;
     }
 }
 
@@ -140,11 +116,7 @@ h2 span {
     padding: 0 10px;
 }
 
-.projects-section h2 span {
-    background: #F8F8F8;
-}
-
-.contact-section h2 span {
+.projects-section h2 span, .contact-section h2 span {
     background: #F8F8F8;
 }
 

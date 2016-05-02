@@ -1,32 +1,4 @@
 /*this is the guy for small screens, not worrying about it rn*/
-
-.banner    {
-    height: 200;
-    background-color: #211a12 !important;
-}
-
-.name   {
-    font-size: 450%;
-    letter-spacing:2px;
-    color: white !important;
-    margin-left: auto;
-}
-
-.bar    {
-    background-color:lightgrey;
-    height: 75px;
-    width: 100%;
-    margin: auto;
-}
-
-.body   {
-    margin-top: 2%;
-    background-color:white;
-    height: 800px;
-}
-
-.container  {
-    width: 100%;
-    margin: auto;
-    background-color: black;
+.navbar-brand   {
+    padding-left: 5% !important;
 }
